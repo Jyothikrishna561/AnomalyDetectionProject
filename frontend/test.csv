@@ -1,0 +1,5 @@
+login_hour,transaction_amount,session_duration
+10,500,15
+2,50000,5
+14,800,20
+1,70000,3

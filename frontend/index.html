@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Anomaly Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>AI Anomaly Detection</h2>
+
+        <input type="number" id="login_hour" placeholder="Login Hour"><br>
+        <input type="number" id="amount" placeholder="Transaction Amount"><br>
+        <input type="number" id="duration" placeholder="Session Duration"><br>
+
+        <button onclick="checkAnomaly()">Check</button>
+
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Anomaly Detection</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+    <h1>🚨 AI Anomaly Detection System</h1>
+
+    <div class="grid">
+
+        <!-- LEFT: MANUAL INPUT -->
+        <div class="card">
+            <h3>Manual Check</h3>
+
+            <input type="number" id="login_hour" placeholder="Login Hour">
+            <input type="number" id="amount" placeholder="Transaction Amount">
+            <input type="number" id="duration" placeholder="Session Duration">
+
+            <button onclick="checkAnomaly()">Check</button>
+
+            <h4 id="result"></h4>
+        </div>
+
+        <!-- RIGHT: CSV UPLOAD -->
+        <div class="card">
+            <h3>Upload CSV</h3>
+
+            <input type="file" id="fileInput"><br><br>
+
+            <button onclick="uploadCSV()">Upload & Analyze</button>
+
+            <div id="tableResult"></div>
+        </div>
+
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
