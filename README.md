@@ -2,12 +2,12 @@
 
 ## 📌 Overview
 
-This is a web-based AI system that detects anomalous (suspicious) transactions using machine learning.
+This project detects suspicious transactions using machine learning (Isolation Forest).
 
-The system allows:
+Users can:
 
-* Manual transaction input
-* CSV file upload for bulk anomaly detection
+* Enter transaction details manually
+* Upload CSV files for bulk analysis
 
 ---
 
@@ -20,62 +20,40 @@ The system allows:
 ## 🚀 Features
 
 * Manual anomaly detection
-* CSV upload & bulk analysis
-* Real-time API predictions
-* Clean modern UI (dark theme)
+* CSV upload and analysis
+* FastAPI backend
+* Clean dark UI
 
 ---
 
 ## 🛠️ Tech Stack
 
-* FastAPI (Backend)
-* HTML, CSS, JavaScript (Frontend)
-* Scikit-learn (Isolation Forest Model)
-* Uvicorn Server
+* FastAPI
+* HTML, CSS, JavaScript
+* Scikit-learn
+* Uvicorn
 
 ---
 
-## ▶️ How to Run
+## ▶️ Run Project
 
 ### Backend
 
-```bash
 cd backend
 python -m uvicorn main:app --reload
-```
 
 ### Frontend
 
-```bash
 cd frontend
 python -m http.server 5500
-```
 
-Open:
-http://127.0.0.1:5500
+Open: http://127.0.0.1:5500
 
 ---
 
-## 📊 API Endpoints
+## 📊 API
 
-* POST `/predict` → single input prediction
-* POST `/upload-csv` → bulk anomaly detection
-
----
-
-## 📂 Project Structure
-
-* backend → API & model
-* frontend → UI
-* dataset → sample data
-* model → trained ML model
-
----
-
-## 💡 Future Improvements
-
-* Add graphs & analytics dashboard
-* Improve model accuracy
-* Deploy online
+* POST /predict
+* POST /upload-csv
 
 
