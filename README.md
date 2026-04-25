@@ -51,8 +51,7 @@ cd frontend
 python -m http.server 5500
 ```
 
-👉 Open in browser:
-http://127.0.0.1:5500
+Runs locally only
 
 ---
 
