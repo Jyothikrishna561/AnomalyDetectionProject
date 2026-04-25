@@ -51,7 +51,8 @@ cd frontend
 python -m http.server 5500
 ```
 
-Runs locally only
+## 🌐 Live Demo
+This project runs locally. Follow the steps below to run it on your system.
 
 ---
 
